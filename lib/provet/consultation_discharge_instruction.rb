@@ -3,7 +3,6 @@
 module Provet
   class ConsultationDischargeInstruction < Provet::Base
     def initialize(consultation_id:)
-      super
       @consultation_id = consultation_id
     end
 

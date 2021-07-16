@@ -3,7 +3,6 @@
 module Provet
   class Item < Provet::Base
     def initialize(type_code:)
-      super
       @type_code = type_code
     end
 
