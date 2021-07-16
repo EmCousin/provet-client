@@ -85,8 +85,6 @@ module Provet
       { archived: 0 }.to_json
     end
 
-    protected
-
     def get(path, query: {})
       options = default_options
       options[:query] ||= default_query
