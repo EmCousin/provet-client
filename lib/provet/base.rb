@@ -8,7 +8,7 @@ module Provet
     include HTTParty
     include SoftDeletable
 
-    base_uri "#{Provet.api_host}/#{Provet.instance}/api/#{Provet.api_version}"
+    base_uri "#{Provet.host}/#{Provet.instance}/api/#{Provet.api_version}"
 
     def list(query = {})
       get(collection_path, query: query)
