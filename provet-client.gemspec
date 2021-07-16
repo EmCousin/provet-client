@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'lib/provet/version'
+require File.expand_path('lib/provet/version', __dir__)
 
 Gem::Specification.new do |spec|
   spec.name          = 'provet-client'
