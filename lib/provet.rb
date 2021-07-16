@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'provet/base'
+
 module Provet
   class Error < StandardError; end
 
@@ -48,7 +50,7 @@ module Provet
   end
 end
 
-require_relative 'provet/base'
+
 require_relative 'provet/appointment'
 require_relative 'provet/availability'
 require_relative 'provet/client'
