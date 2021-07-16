@@ -5,7 +5,7 @@ module Provet
     private
 
     def endpoint_name
-      "invoicerow"
+      'invoicerow'
     end
   end
 end

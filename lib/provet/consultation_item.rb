@@ -5,7 +5,7 @@ module Provet
     private
 
     def endpoint_name
-      "consultationitem"
+      'consultationitem'
     end
   end
 end

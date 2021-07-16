@@ -5,7 +5,7 @@ module Provet
     private
 
     def endpoint_name
-      "appointment"
+      'appointment'
     end
 
     def soft_deletable?

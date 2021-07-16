@@ -9,7 +9,7 @@ module Provet
     end
 
     def endpoint_name
-      "patient"
+      'patient'
     end
   end
 end

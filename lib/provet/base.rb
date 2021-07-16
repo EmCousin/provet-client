@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
-require "httparty"
+require 'httparty'
+require_relative 'soft_deletable'
 
 module Provet
   class Base
     include HTTParty
+    include SoftDeletable
 
     base_uri "#{Provet.api_host}/#{Provet.instance}/api/#{Provet.api_version}"
 
@@ -14,15 +16,15 @@ module Provet
 
     def all(query = {})
       data = list(page: 1, **query)
-      return [] if data["results"].blank? || data["num_pages"].blank?
+      return [] if data['results'].blank? || data['num_pages'].blank?
 
-      num_pages = data["num_pages"]
-      return data["results"] if num_pages <= 1
+      num_pages = data['num_pages']
+      return data['results'] if num_pages <= 1
 
-      results = data["results"]
+      results = data['results']
       (2..num_pages).each do |page_index|
         data = list(page: page_index, **query)
-        results += data["results"]
+        results += data['results']
       end
       results
     end
@@ -48,7 +50,7 @@ module Provet
     end
 
     def collection_path
-      File.join("/", endpoint_name, "/")
+      File.join('/', endpoint_name, '/')
     end
 
     def resource_url(id_ext)
@@ -56,7 +58,7 @@ module Provet
     end
 
     def resource_path(id_ext)
-      File.join(collection_path, id_ext.to_s, "/")
+      File.join(collection_path, id_ext.to_s, '/')
     end
 
     protected
@@ -95,14 +97,14 @@ module Provet
 
     def headers
       {
-        "Content-Type" => "application/json",
-        "Accept" => "application/json",
-        "Authorization" => "Token #{Provet.token}"
+        'Content-Type' => 'application/json',
+        'Accept' => 'application/json',
+        'Authorization' => "Token #{Provet.token}"
       }
     end
 
     def endpoint_name
-      raise "Must be overriden by subclass"
+      raise 'Must be overriden by subclass'
     end
   end
 end

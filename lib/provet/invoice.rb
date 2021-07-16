@@ -5,7 +5,7 @@ module Provet
     private
 
     def endpoint_name
-      "invoice"
+      'invoice'
     end
   end
 end

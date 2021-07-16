@@ -5,7 +5,7 @@ module Provet
     private
 
     def endpoint_name
-      "veterinarians_availibility"
+      'veterinarians_availibility'
     end
   end
 end

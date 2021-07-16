@@ -5,7 +5,7 @@ module Provet
     private
 
     def endpoint_name
-      "remindertemplate"
+      'remindertemplate'
     end
   end
 end

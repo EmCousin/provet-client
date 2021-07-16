@@ -9,7 +9,7 @@ module Provet
     end
 
     def endpoint_name
-      "user"
+      'user'
     end
 
     def archive_payload

@@ -1,0 +1,9 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.4
+
+Style/ClassVars:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
