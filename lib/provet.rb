@@ -1,24 +1,53 @@
 # frozen_string_literal: true
 
-require 'active_support/core_ext/module/attribute_accessors'
-
 module Provet
   class Error < StandardError; end
 
-  mattr_accessor :host
   @@host = 'https://us.provetcloud.com'
-
-  mattr_accessor :instance
   @@instance = nil
-
-  mattr_accessor :api_version
   @@api_version = '0.1'
-
-  mattr_accessor :token
   @@token = nil
+
+  def self.host
+    @@host
+  end
+
+  def self.host=(value)
+    @@host = value
+    set_base_uri
+  end
+
+  def self.instance
+    @@instance
+  end
+
+  def self.instance=(value)
+    @@instance = value
+    set_base_uri
+  end
+
+  def self.api_version
+    @@api_version
+  end
+
+  def self.api_version=(value)
+    @@api_version = value
+    set_base_uri
+  end
+
+  def self.token
+    @@token
+  end
+
+  def self.token=(value)
+    @@token = value
+  end
+
+  def self.set_base_uri
+    Provet::Base.base_uri("#{host}/#{instance}/api/#{api_version}")
+  end
 end
 
-require_relative 'provet/version'
 require_relative 'provet/base'
 require_relative 'provet/appointment'
 require_relative 'provet/availability'
