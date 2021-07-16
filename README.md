@@ -57,6 +57,10 @@ The classes are :
 - Provet::Reason
 - Provet::ReminderTemplate
 - Provet::Reminder
+- Provet::UserDetails
+- Provet::UserGroup
+- Provet::User
+- Provet::VatGroup
 
 On each of the aforementioned classes you can call the following methods:
 
