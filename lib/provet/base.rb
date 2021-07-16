@@ -1,12 +1,10 @@
 # frozen_string_literal: true
 
 require 'httparty'
-require_relative 'soft_deletable'
 
 module Provet
   class Base
     include HTTParty
-    include SoftDeletable
 
     def list(query = {})
       get(collection_path, query: query)
@@ -40,7 +38,17 @@ module Provet
     end
 
     def destroy(id_ext)
-      delete(resource_path(id_ext))
+      if soft_deletable?
+        soft_delete(id_ext)
+      else
+        delete(resource_path(id_ext))
+      end
+    end
+
+    def restore(id_ext)
+      return unless soft_deletable?
+
+      update(id_ext, restore_payload, verb: :patch)
     end
 
     def collection_url
@@ -57,6 +65,24 @@ module Provet
 
     def resource_path(id_ext)
       File.join(collection_path, id_ext.to_s, '/')
+    end
+
+    protected
+
+    def soft_delete(id_ext)
+      update(id_ext, archive_payload, verb: :patch)
+    end
+
+    def soft_deletable?
+      false
+    end
+
+    def archive_payload
+      { archived: 1 }.to_json
+    end
+
+    def restore_payload
+      { archived: 0 }.to_json
     end
 
     protected

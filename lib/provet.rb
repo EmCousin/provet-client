@@ -23,7 +23,9 @@ require 'provet/reason'
 require 'provet/reminder_template'
 require 'provet/reminder'
 require 'provet/user_details'
+require 'provet/user_group'
 require 'provet/user'
+require 'provet/vat_group'
 
 module Provet
   class Error < StandardError; end
