@@ -66,7 +66,7 @@ Returns the base URI of the Provet API. Depends on the Provet instance present i
 Example :
 
 ```ruby
-Proxies::Clinic::Provet::V1::Base.base_uri
+Provet::Base.base_uri
 # => "https://us.provetcloud.com/1234/api/0.1" in staging
 ```
 
@@ -76,7 +76,7 @@ Returns a list of the designated provet resource. It is paginated by default.
 Example :
 
 ```ruby
-res = Proxies::Clinic::Provet::V1::Client.new.list
+res = Provet::Client.new.list
 res.parsed_response
 # => {"count"=>4223, "num_pages"=>85, "next"=>"https://us.provetcloud.com/1234/api/0.1/client/?page=2", "previous"=>nil, "results"=>[{"id"=>1, "url"=>"https://us.provetcloud.com/1234/api/0.1/client/1/", "title"=>nil, "firstname"=>"Helmut", "lastname"=>"Eldridge", "organization_name"=>"", "customer_type"=>0, "vat_number"=>"", "register_number"=>nil, "home_department"=>"https://us.provetcloud.com/1234/api/0.1/department/1/", "due_date_delay"=>nil, "street_address"=>"Job Str.", "street_address_2"=>nil, "street_address_3"=>nil, "zip_code"=>"W11 2BQ", "city"=>"London", "state"=>nil, "email"=>"", "alt_emails"=>nil, "id_number"=>"", "old_client_id"=>nil, "critical_notes"=>nil, "critical_accounting_notes"=>nil, "remarks"=>"", "archived"=>true, "country"=>"", "no_sms"=>false, "no_email"=>false, "external"=>false, "referring_organization"=>false, "parent_referring_organization"=>nil, "referring_vet"=>false, "imported"=>false, "date_imported"=>nil, "patients"=>[], "invoicing_client"=>nil, "tags_rel"=>[], "created"=>"2018-03-26T20:16:25-04:00", "created_user"=>nil, "modified"=>"2021-06-25T14:13:26-04:00", "modified_user"=>"https://us.provetcloud.com/1234/api/0.1/user/8/", "phone_numbers"=>[], "status_type"=>0, "fields_rel"=>[], "farm_code"=>nil, "holdingplacenumbers"=>[], "communication_preferences"=>nil, "production_animal_client"=>false}, # [...]]}
 ```
@@ -87,7 +87,7 @@ Calls `#list` as many times as there are pages and returns one array with all re
 
 Example :
 ```ruby
-all_provet_clients = Proxies::Clinic::Provet::V1::Client.new.all
+all_provet_clients = Provet::Client.new.all
 # => [{"id"=>1, "url"=>"https://us.provetcloud.com/1234/api/0.1/client/1/", "title"=>nil, "firstname"=>"Helmut", "lastname"=>"Eldridge", "organization_name"=>"", "customer_type"=>0, "vat_number"=>"", "register_number"=>nil, "home_department"=>"https://us.provetcloud.com/1234/api/0.1/department/1/", "due_date_delay"=>nil, "street_address"=>"Job Str.", "street_address_2"=>nil, "street_address_3"=>nil, "zip_code"=>"W11 2BQ", "city"=>"London", "state"=>nil, "email"=>"", "alt_emails"=>nil, "id_number"=>"", "old_client_id"=>nil, "critical_notes"=>nil, "critical_accounting_notes"=>nil, "remarks"=>"", "archived"=>true, "country"=>"", "no_sms"=>false, "no_email"=>false, "external"=>false, "referring_organization"=>false, "parent_referring_organization"=>nil, "referring_vet"=>false, "imported"=>false, "date_imported"=>nil, "patients"=>[], "invoicing_client"=>nil, "tags_rel"=>[], "created"=>"2018-03-26T20:16:25-04:00", "created_user"=>nil, "modified"=>"2021-06-25T14:13:26-04:00", "modified_user"=>"https://us.provetcloud.com/1234/api/0.1/user/8/", "phone_numbers"=>[], "status_type"=>0, "fields_rel"=>[], "farm_code"=>nil, "holdingplacenumbers"=>[], "communication_preferences"=>nil, "production_animal_client"=>false}, {[...]}]
 ```
 
@@ -97,7 +97,7 @@ all_provet_clients = Proxies::Clinic::Provet::V1::Client.new.all
 Returns the corresponding provet resource.
 
 ```ruby
-res = Proxies::Clinic::Provet::V1::Client.new.find(1)
+res = Provet::Client.new.find(1)
 res.parsed_response
 # => {"id"=>1, "url"=>"https://us.provetcloud.com/1234/api/0.1/client/1/", "title"=>nil, "firstname"=>"Helmut", "lastname"=>"Eldridge", "organization_name"=>"", "customer_type"=>0, "vat_number"=>"", "register_number"=>nil, "home_department"=>"https://us.provetcloud.com/1234/api/0.1/department/1/", "due_date_delay"=>nil, "street_address"=>"Job Str.", "street_address_2"=>nil, "street_address_3"=>nil, "zip_code"=>"W11 2BQ", "city"=>"London", "state"=>nil, "email"=>"", "alt_emails"=>nil, "id_number"=>"", "old_client_id"=>nil, "critical_notes"=>nil, "critical_accounting_notes"=>nil, "remarks"=>"", "archived"=>true, "country"=>"", "no_sms"=>false, "no_email"=>false, "external"=>false, "referring_organization"=>false, "parent_referring_organization"=>nil, "referring_vet"=>false, "imported"=>false, "date_imported"=>nil, "patients"=>[], "invoicing_client"=>nil, "tags_rel"=>[], "created"=>"2018-03-26T20:16:25-04:00", "created_user"=>nil, "modified"=>"2021-06-25T14:13:26-04:00", "modified_user"=>"https://us.provetcloud.com/1234/api/0.1/user/8/", "phone_numbers"=>[], "status_type"=>0, "fields_rel"=>[], "farm_code"=>nil, "holdingplacenumbers"=>[], "communication_preferences"=>nil, "production_animal_client"=>false}
 ```
@@ -115,7 +115,7 @@ payload = {
   patients: [],
 }
 
-res = Proxies::Clinic::Provet::V1::Client.new.create(payload.to_json)
+res = Provet::Client.new.create(payload.to_json)
 res.parsed_response
 # => {"id"=>42, "url"=>"https://us.provetcloud.com/1234/api/0.1/client/42/", "title"=>nil, "firstname"=>"Luke", "lastname"=>"Skywalker", "organization_name"=>"", "customer_type"=>0, "vat_number"=>"", "register_number"=>nil, "home_department"=>"https://us.provetcloud.com/1234/api/0.1/department/1/", "due_date_delay"=>nil, "street_address"=>"Job Str.", "street_address_2"=>nil, "street_address_3"=>nil, "zip_code"=>"nil", "city"=>"nil", "state"=>nil, "email"=>"", "alt_emails"=>nil, "id_number"=>"", "old_client_id"=>nil, "critical_notes"=>nil, "critical_accounting_notes"=>nil, "remarks"=>"", "archived"=>true, "country"=>"", "no_sms"=>false, "no_email"=>false, "external"=>false, "referring_organization"=>false, "parent_referring_organization"=>nil, "referring_vet"=>false, "imported"=>false, "date_imported"=>nil, "patients"=>[], "invoicing_client"=>nil, "tags_rel"=>[], "created"=>"2021-03-26T20:16:25-04:00", "created_user"=>nil, "modified"=>"2021-06-25T14:13:26-04:00", "modified_user"=>nil, "phone_numbers"=>[], "status_type"=>0, "fields_rel"=>[], "farm_code"=>nil, "holdingplacenumbers"=>[], "communication_preferences"=>nil, "production_animal_client"=>false}
 ```
@@ -131,7 +131,7 @@ payload = {
   patients: [],
 }
 
-res = Proxies::Clinic::Provet::V1::Client.new.update(1, payload.to_json)
+res = Provet::Client.new.update(1, payload.to_json)
 res.parsed_response
 # => {"id"=>1, "url"=>"https://us.provetcloud.com/1234/api/0.1/client/1/", "title"=>nil, "firstname"=>"Luke", "lastname"=>"Skywalker", "organization_name"=>"", "customer_type"=>0, "vat_number"=>"", "register_number"=>nil, "home_department"=>"https://us.provetcloud.com/1234/api/0.1/department/1/", "due_date_delay"=>nil, "street_address"=>"Job Str.", "street_address_2"=>nil, "street_address_3"=>nil, "zip_code"=>"nil", "city"=>"nil", "state"=>nil, "email"=>"", "alt_emails"=>nil, "id_number"=>"", "old_client_id"=>nil, "critical_notes"=>nil, "critical_accounting_notes"=>nil, "remarks"=>"", "archived"=>true, "country"=>"", "no_sms"=>false, "no_email"=>false, "external"=>false, "referring_organization"=>false, "parent_referring_organization"=>nil, "referring_vet"=>false, "imported"=>false, "date_imported"=>nil, "patients"=>[], "invoicing_client"=>nil, "tags_rel"=>[], "created"=>"2021-03-26T20:16:25-04:00", "created_user"=>nil, "modified"=>"2021-06-25T14:13:26-04:00", "modified_user"=>nil, "phone_numbers"=>[], "status_type"=>0, "fields_rel"=>[], "farm_code"=>nil, "holdingplacenumbers"=>[], "communication_preferences"=>nil, "production_animal_client"=>false}
 ```
@@ -142,7 +142,7 @@ Destroys a Provet resource.
 Example:
 
 ```ruby
-res = Proxies::Clinic::Provet::V1::Client.new.destroy(1)
+res = Provet::Client.new.destroy(1)
 ```
 
 ## Additional notes
