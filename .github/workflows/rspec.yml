@@ -27,6 +27,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Rspec
-        run: rspec
+        run: bundle exec rspec
 
 
