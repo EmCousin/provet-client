@@ -1,8 +1,30 @@
+require:
+  - rubocop-performance
+  - rubocop-rake
+  - rubocop-rspec
+
 AllCops:
   NewCops: enable
   TargetRubyVersion: 2.4
 
+Layout/LineLength:
+  Exclude:
+   - spec/**/*
+
 Lint/MissingSuper:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/MultipleExpectations:
   Enabled: false
 
 Style/ClassVars:

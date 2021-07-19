@@ -1,0 +1,15 @@
+{
+  "url": "https://us.provetcloud.com/1234/api/0.1/itemtemplate/1/",
+  "id": 1,
+  "name": "Fecal Panel - Internal Lab",
+  "notes": "This is a fecal panel - internal lab",
+  "subtotal": 0.0,
+  "vat": 0.0,
+  "total": 0.0,
+  "department": "https://us.provetcloud.com/1234/api/0.1/department/1/",
+  "item_list": "https://us.provetcloud.com/1234/api/0.1/itemlist/1/",
+  "prices_up_to_date": true,
+  "template_items": [],
+  "use_fixed_price": false,
+  "fixed_price": null
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://us.provetcloud.com/1234/api/0.1/itemtemplateitem/1/",
+  "id": 1,
+  "template": "https://us.provetcloud.com/1234/api/0.1/itemtemplate/2/",
+  "item": "https://us.provetcloud.com/1234/api/0.1/medicine/34/",
+  "code": "ABCDEFGH",
+  "name": "Bravecto",
+  "quantity": 1.0,
+  "units": 1.0,
+  "usage_size": 1,
+  "price": 42.00,
+  "price_with_vat": 42.00,
+  "type_code": 2,
+  "sum": 42.00,
+  "sum_vat": 0.0,
+  "sum_total": 42.00,
+  "archived": true,
+  "default_selected": 0
+}

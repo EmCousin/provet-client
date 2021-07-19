@@ -1,0 +1,28 @@
+{
+  "count": 8,
+  "num_pages": 2,
+  "next": "https://us.provetcloud.com/1234/api/0.1/usergroup/?page=2",
+  "previous": null,
+  "results": [
+      {
+        "id": 1,
+        "url": "https://us.provetcloud.com/1234/api/0.1/usergroup/1/",
+        "name": "Users"
+      },
+      {
+        "id": 2,
+        "url": "https://us.provetcloud.com/1234/api/0.1/usergroup/2/",
+        "name": "Reports"
+      },
+      {
+        "id": 3,
+        "url": "https://us.provetcloud.com/1234/api/0.1/usergroup/3/",
+        "name": "Manager"
+      },
+      {
+        "id": 4,
+        "url": "https://us.provetcloud.com/1234/api/0.1/usergroup/4/",
+        "name": "Administrator"
+      }
+  ]
+}

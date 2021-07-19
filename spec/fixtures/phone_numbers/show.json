@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "url": "https://us.provetcloud.com/1234/api/0.1/phonenumber/2/",
+  "client": "https://us.provetcloud.com/1234/api/0.1/client/2/",
+  "type_code": 1,
+  "phone_number": "+16469876543",
+  "description": null,
+  "preferred_reminders": false,
+  "created": "2021-07-19T12:26:18.624874-04:00",
+  "modified": "2021-07-19T12:26:18.624912-04:00"
+}

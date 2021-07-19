@@ -1,0 +1,32 @@
+{
+  "count": 42,
+  "num_pages": 2,
+  "next": "https://us.provetcloud.com/1234/api/0.1/consultation/1/consultationdischargeinstruction/?page=2",
+  "previous": null,
+  "results": [
+      {
+          "consultation": "https://us.provetcloud.com/1234/api/0.1/consultation/1/",
+          "patient": "https://us.provetcloud.com/1234/api/0.1/patient/1/",
+          "text": "TBD",
+          "created": "2018-03-26T21:21:57-04:00",
+          "modified": "2021-07-19T05:50:54-04:00",
+          "created_user": "https://us.provetcloud.com/1234/api/0.1/user/1/",
+          "modified_user": null,
+          "modified_session": null,
+          "printed_at": null,
+          "merge_by_field": "text"
+      },
+      {
+          "consultation": "https://us.provetcloud.com/1234/api/0.1/consultation/1/",
+          "patient": "https://us.provetcloud.com/1234/api/0.1/patient/2/",
+          "text": "TBD",
+          "created": "2021-07-19T05:52:01-04:00",
+          "modified": "2021-07-19T05:52:01-04:00",
+          "created_user": "https://us.provetcloud.com/1234/api/0.1/user/1/",
+          "modified_user": null,
+          "modified_session": null,
+          "printed_at": null,
+          "merge_by_field": "text"
+      }
+  ]
+}

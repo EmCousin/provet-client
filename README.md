@@ -57,6 +57,8 @@ The classes are :
 - Provet::Reason
 - Provet::ReminderTemplate
 - Provet::Reminder
+- Provet::Shift
+- Provet::ShiftType
 - Provet::UserDetails
 - Provet::UserGroup
 - Provet::User
@@ -115,7 +117,7 @@ Example :
 payload = {
   firstname: "Luke",
   lastname: "Skywalker",
-  email: "luke@smalldoorvet.com",
+  email: "luke@example.com",
   patients: [],
 }
 
@@ -131,7 +133,7 @@ Updates a Provet resource and returns that resource.
 payload = {
   firstname: "Luke",
   lastname: "Skywalker",
-  email: "luke@smalldoorvet.com",
+  email: "luke@example.com",
   patients: [],
 }
 
@@ -151,6 +153,12 @@ res = Provet::Client.new.destroy(1)
 
 ## Additional notes
 
+### Non allowed methods
+
+Some endpoints do not allow certain requests to be made. For example, you can read user groups, but you can't write (create, update or destroy). When an attempt at calling a method that is not allowed, a `Provet::MethodNotAllowedError` error will be thrown.
+
+### Soft deletion
+
 Some Provet resources are configured to be soft-deletable with this gem:
 - Provet::Appointment
 - Provet::Client
@@ -158,6 +166,8 @@ Some Provet resources are configured to be soft-deletable with this gem:
 - Provet::User
 
 For these classes, calling `#destroy` will perform a `PATCH` http request to archive the resource in Provet, instead of actually erasing it.
+
+Some of those soft-deletable resources can be hard-destroy by calling `#really_destroy!` on them.
 
 ## Development
 

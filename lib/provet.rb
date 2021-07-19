@@ -22,6 +22,8 @@ require 'provet/reason_group'
 require 'provet/reason'
 require 'provet/reminder_template'
 require 'provet/reminder'
+require 'provet/shift_type'
+require 'provet/shift'
 require 'provet/user_details'
 require 'provet/user_group'
 require 'provet/user'
@@ -29,6 +31,7 @@ require 'provet/vat_group'
 
 module Provet
   class Error < StandardError; end
+  class MethodNotAllowedError < Error; end
 
   @@host = 'https://us.provetcloud.com'
   @@instance = nil
@@ -72,5 +75,9 @@ module Provet
 
   def self.set_base_uri
     Provet::Base.base_uri("#{host}/#{instance}/api/#{api_version}")
+  end
+
+  def self.root
+    File.dirname __dir__
   end
 end

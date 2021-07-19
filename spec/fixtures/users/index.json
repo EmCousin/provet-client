@@ -1,0 +1,38 @@
+{
+  "count": 42,
+  "num_pages": 2,
+  "next": "https://us.provetcloud.com/1234/api/0.1/user/?page=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 1,
+      "url": "https://us.provetcloud.com/1234/api/0.1/user/1/",
+      "email": "user@example.com",
+      "first_name": "Luke",
+      "last_name": "SkyWalker",
+      "is_active": false,
+      "created": "2018-03-26T20:32:29-04:00",
+      "last_login": "2019-11-05T17:15:51-05:00",
+      "user_details": "https://us.provetcloud.com/1234/api/0.1/userdetails/1/",
+      "is_staff": false,
+      "groups": [
+          "https://us.provetcloud.com/1234/api/0.1/usergroup/1/"
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://us.provetcloud.com/1234/api/0.1/user/2/",
+      "email": "admin@example.com",
+      "first_name": "Anakin",
+      "last_name": "Skywalker",
+      "is_active": true,
+      "created": "2018-03-26T20:34:28-04:00",
+      "last_login": "2021-06-25T08:39:47.062971-04:00",
+      "user_details": "https://us.provetcloud.com/1234/api/0.1/userdetails/2/",
+      "is_staff": true,
+      "groups": [
+          "https://us.provetcloud.com/1234/api/0.1/usergroup/2/"
+      ]
+    }
+  ]
+}

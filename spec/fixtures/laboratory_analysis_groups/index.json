@@ -1,0 +1,18 @@
+{
+  "count": 42,
+  "num_pages": 2,
+  "next": "https://us.provetcloud.com/1234/api/0.1/laboratoryanalysisgroup/?page=2",
+  "previous": null,
+  "results": [
+      {
+          "url": "https://us.provetcloud.com/1234/api/0.1/laboratoryanalysisgroup/1/",
+          "id": 1,
+          "name": "Internal laboratory"
+      },
+      {
+          "url": "https://us.provetcloud.com/1234/api/0.1/laboratoryanalysisgroup/2/",
+          "id": 2,
+          "name": "External laboratory"
+      }
+  ]
+}

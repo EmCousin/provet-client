@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "url": "https://us.provetcloud.com/1234/api/0.1/user/1/",
+  "email": "user@example.com",
+  "first_name": "Luke",
+  "last_name": "SkyWalker",
+  "is_active": false,
+  "created": "2018-03-26T20:32:29-04:00",
+  "last_login": "2019-11-05T17:15:51-05:00",
+  "user_details": "https://us.provetcloud.com/1234/api/0.1/userdetails/1/",
+  "is_staff": false,
+  "groups": [
+      "https://us.provetcloud.com/1234/api/0.1/usergroup/1/"
+  ]
+}
