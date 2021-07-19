@@ -1,0 +1,20 @@
+{
+    "id": 1,
+    "consultation": "https://us.provetcloud.com/1234/api/0.1/consultation/1/",
+    "patient": "https://us.provetcloud.com/1234/api/0.1/patient/1/",
+    "main_consultation_template": null,
+    "base_template": "https://us.provetcloud.com/1234/api/0.1/itemtemplate/1/",
+    "name": "Spay & Neuter",
+    "use_fixed_price": true,
+    "fixed_price": 249.0,
+    "price_change_item": "https://us.provetcloud.com/1234/api/0.1/consultationitem/1/",
+    "price_change_org_item": "https://us.provetcloud.com/1234/api/0.1/item/1/",
+    "subtotal": 100.00,
+    "vat": 12.83,
+    "total": 112.83,
+    "items": [
+        "https://us.provetcloud.com/1234/api/0.1/consultationitem/1/",
+        "https://us.provetcloud.com/1234/api/0.1/consultationitem/2/",
+        "https://us.provetcloud.com/1234/api/0.1/consultationitem/3/"
+    ]
+}

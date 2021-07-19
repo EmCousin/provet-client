@@ -6,6 +6,10 @@ module Provet
       @consultation_id = consultation_id
     end
 
+    def destroy(*_args)
+      raise MethodNotAllowedError
+    end
+
     private
 
     def endpoint_name

@@ -12,7 +12,8 @@ module Provet
 
     def all(query = {})
       data = list(page: 1, **query)
-      return [] if data['results'].blank? || data['num_pages'].blank?
+
+      return [] unless data['results'].is_a?(Array) && data['results'].any? && data['num_pages'].is_a?(Integer)
 
       num_pages = data['num_pages']
       return data['results'] if num_pages <= 1
@@ -25,30 +26,36 @@ module Provet
       results
     end
 
-    def find(id_ext)
-      get(resource_path(id_ext))
+    def find(id)
+      get(resource_path(id))
     end
 
     def create(body)
       post(collection_path, body)
     end
 
-    def update(id_ext, body, verb: :put)
-      send(verb, resource_path(id_ext), body)
+    def update(id, body, verb: :put)
+      send(verb, resource_path(id), body)
     end
 
-    def destroy(id_ext)
-      if soft_deletable?
-        soft_delete(id_ext)
+    def destroy(id, hard: !soft_deletable?)
+      if hard
+        delete(resource_path(id))
       else
-        delete(resource_path(id_ext))
+        patch(resource_path(id), archive_payload)
       end
     end
 
-    def restore(id_ext)
-      return unless soft_deletable?
+    def really_destroy!(id)
+      raise MethodNotAllowedError unless soft_deletable?
 
-      update(id_ext, restore_payload, verb: :patch)
+      destroy(id, hard: true)
+    end
+
+    def restore(id)
+      raise MethodNotAllowedError unless soft_deletable?
+
+      patch(resource_path(id), restore_payload)
     end
 
     def collection_url
@@ -59,19 +66,15 @@ module Provet
       File.join('/', endpoint_name, '/')
     end
 
-    def resource_url(id_ext)
-      File.join(self.class.base_uri, resource_path(id_ext))
+    def resource_url(id)
+      File.join(self.class.base_uri, resource_path(id))
     end
 
-    def resource_path(id_ext)
-      File.join(collection_path, id_ext.to_s, '/')
+    def resource_path(id)
+      File.join(collection_path, id.to_s, '/')
     end
 
     protected
-
-    def soft_delete(id_ext)
-      update(id_ext, archive_payload, verb: :patch)
-    end
 
     def soft_deletable?
       false

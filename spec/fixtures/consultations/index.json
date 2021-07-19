@@ -1,0 +1,87 @@
+{
+  "count": 42,
+  "num_pages": 2,
+  "next": "https://us.provetcloud.com/1234/api/0.1/consultation/?page=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 1,
+      "url": "https://us.provetcloud.com/1234/api/0.1/consultation/1/",
+      "client": "https://us.provetcloud.com/1234/api/0.1/client/1/",
+      "patients": [
+        "https://us.provetcloud.com/1234/api/0.1/patient/1/"
+      ],
+      "complaint": "No reason apparently",
+      "admitted_time": "2018-03-26T21:20:00-04:00",
+      "first_entry": null,
+      "started": "2018-03-26T21:20:00-04:00",
+      "finished": "2018-03-26T21:23:40-04:00",
+      "ended": "2018-03-26T21:23:52-04:00",
+      "status": 6,
+      "type": 1,
+      "invoice": "https://us.provetcloud.com/1234/api/0.1/invoice/1/",
+      "supervising_veterinarian": "https://us.provetcloud.com/1234/api/0.1/user/1/",
+      "department": "https://us.provetcloud.com/1234/api/0.1/department/1/",
+      "consultation_items": [
+        "https://us.provetcloud.com/1234/api/0.1/consultationitem/1/"
+      ],
+      "reporting_dimension_1": null,
+      "reporting_dimension_2": null,
+      "consultation_notes": [],
+      "consultation_diagnosis": [
+        "https://us.provetcloud.com/1234/api/0.1/consultation/1/consultationdiagnosis/1/"
+      ],
+      "consultation_dischargeinstructions": [
+        "https://us.provetcloud.com/1234/api/0.1/consultation/1/consultationdischargeinstruction/1/"
+      ],
+      "consultation_patient_status": [],
+      "triage": null,
+      "external_sent": null,
+      "ward": null,
+      "patient_location": null,
+      "integration_status": null,
+      "holding_place_number": [],
+      "report_to_authorities": false,
+      "consultation_extras": null
+    },
+    {
+      "id": 2,
+      "url": "https://us.provetcloud.com/1234/api/0.1/consultation/2/",
+      "client": "https://us.provetcloud.com/1234/api/0.1/client/2/",
+      "patients": [
+          "https://us.provetcloud.com/1234/api/0.1/patient/2/"
+      ],
+      "complaint": "No reason apparently",
+      "admitted_time": "2018-04-03T16:01:00-04:00",
+      "first_entry": null,
+      "started": "2018-04-03T16:01:00-04:00",
+      "finished": "2019-08-06T14:09:25-04:00",
+      "ended": "2019-08-06T14:09:25-04:00",
+      "status": 6,
+      "type": 1,
+      "invoice": "https://us.provetcloud.com/1234/api/0.1/invoice/2/",
+      "supervising_veterinarian": "https://us.provetcloud.com/1234/api/0.1/user/2/",
+      "department": "https://us.provetcloud.com/1234/api/0.1/department/1/",
+      "consultation_items": [
+        "https://us.provetcloud.com/1234/api/0.1/consultationitem/2/"
+      ],
+      "reporting_dimension_1": null,
+      "reporting_dimension_2": null,
+      "consultation_notes": [],
+      "consultation_diagnosis": [],
+      "consultation_dischargeinstructions": [
+        "https://us.provetcloud.com/1234/api/0.1/consultation/2/consultationdischargeinstruction/2/",
+        "https://us.provetcloud.com/1234/api/0.1/consultation/2/consultationdischargeinstruction/3/"
+      ],
+      "consultation_patient_status": [],
+      "triage": null,
+      "external_sent": null,
+      "ward": null,
+      "patient_location": null,
+      "integration_status": null,
+      "holding_place_number": [],
+      "report_to_authorities": false,
+      "consultation_extras": null
+    }
+  ]
+}

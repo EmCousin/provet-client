@@ -1,0 +1,14 @@
+{
+    "vat_group": [
+        "This field is required."
+    ],
+    "item_list": [
+        "This field is required."
+    ],
+    "name": [
+        "This field is required."
+    ],
+    "type_code": [
+        "This field is required."
+    ]
+}

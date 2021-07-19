@@ -1,0 +1,20 @@
+{
+  "count": 42,
+  "num_pages": 2,
+  "next": "https://us.provetcloud.com/1234/api/0.1/itemtemplateitem/?page=2",
+  "previous": null,
+  "results": [
+    {
+      "url": "https://us.provetcloud.com/1234/api/0.1/itemtemplateitem/1/",
+      "id": 1,
+      "name": "Bravecto",
+      "template": "https://us.provetcloud.com/1234/api/0.1/itemtemplate/2/"
+    },
+    {
+      "url": "https://us.provetcloud.com/1234/api/0.1/itemtemplateitem/2/",
+      "id": 2,
+      "name": "Convenia",
+      "template": "https://us.provetcloud.com/1234/api/0.1/itemtemplate/2/"
+    }
+  ]
+}

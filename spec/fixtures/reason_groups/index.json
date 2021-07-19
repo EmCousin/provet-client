@@ -1,0 +1,20 @@
+{
+  "count": 42,
+  "num_pages": 2,
+  "next": "https://us.provetcloud.com/1234/api/0.1/reason_group/?page=2",
+  "previous": null,
+  "results": [
+    {
+      "url": "https://us.provetcloud.com/1234/api/0.1/reason_group/1/",
+      "id": 1,
+      "department": "https://us.provetcloud.com/1234/api/0.1/department/1/",
+      "name": "Group 1"
+    },
+    {
+      "url": "https://us.provetcloud.com/1234/api/0.1/reason_group/2/",
+      "id": 2,
+      "department": "https://us.provetcloud.com/1234/api/0.1/department/1/",
+      "name": "Group 2"
+    }
+  ]
+}

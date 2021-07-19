@@ -2,6 +2,10 @@
 
 module Provet
   class User < Provet::Base
+    def really_destroy!(_id)
+      raise MethodNotAllowedError
+    end
+
     private
 
     def soft_deletable?

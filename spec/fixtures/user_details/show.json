@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "url": "https://us.provetcloud.com/1234/api/0.1/userdetails/1/",
+  "user": "https://us.provetcloud.com/1234/api/0.1/user/1/",
+  "title": "-",
+  "phone": "+16461234567",
+  "veterinarian_id": "-",
+  "active_department": "https://us.provetcloud.com/1234/api/0.1/department/1/",
+  "initials": "AB",
+  "language": "en-us",
+  "user_type": 1,
+  "areas_of_expertise": "",
+  "qualifications": "",
+  "picture": null,
+  "prescriber_id": null,
+  "employee_number": null,
+  "vds_number": null,
+  "all_departments_active": true,
+  "active_departments": [],
+  "home_department": null
+}

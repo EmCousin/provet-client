@@ -11,5 +11,9 @@ module Provet
     def endpoint_name
       @type_code
     end
+
+    def soft_deletable?
+      true
+    end
   end
 end

@@ -1,0 +1,18 @@
+{
+  "count": 42,
+  "num_pages": 2,
+  "next": "https://us.provetcloud.com/1234/api/0.1/itemlist/?page=2",
+  "previous": null,
+  "results": [
+    {
+        "url": "https://us.provetcloud.com/1234/api/0.1/itemlist/1/",
+        "id": 1,
+        "name": "Default"
+    },
+    {
+      "url": "https://us.provetcloud.com/1234/api/0.1/itemlist/2/",
+      "id": 2,
+      "name": "Custom"
+    }
+  ]
+}

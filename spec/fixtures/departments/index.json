@@ -1,0 +1,32 @@
+{
+  "count": 4,
+  "num_pages": 2,
+  "next": "https://us.provetcloud.com/1234/api/0.1/department/page=2",
+  "previous": null,
+  "results": [
+      {
+          "id": 1,
+          "url": "https://us.provetcloud.com/1234/api/0.1/department/1/",
+          "name": "Clinic 1",
+          "active_item_list": "https://us.provetcloud.com/1234/api/0.1/itemlist/1/"
+      },
+      {
+          "id": 2,
+          "url": "https://us.provetcloud.com/1234/api/0.1/department/2/",
+          "name": "Clinic 2",
+          "active_item_list": "https://us.provetcloud.com/1234/api/0.1/itemlist/1/"
+      },
+      {
+          "id": 3,
+          "url": "https://us.provetcloud.com/1234/api/0.1/department/3/",
+          "name": "Clinic 3",
+          "active_item_list": "https://us.provetcloud.com/1234/api/0.1/itemlist/1/"
+      },
+      {
+          "id": 4,
+          "url": "https://us.provetcloud.com/1234/api/0.1/department/4/",
+          "name": "Clinic 4",
+          "active_item_list": "https://us.provetcloud.com/1234/api/0.1/itemlist/1/"
+      }
+  ]
+}

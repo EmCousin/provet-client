@@ -1,0 +1,48 @@
+{
+  "count": 42,
+  "num_pages": 2,
+  "next": "https://us.provetcloud.com/1234/api/0.1/medicine/?page=2",
+  "previous": null,
+  "results": [
+    {
+      "url": "https://us.provetcloud.com/1234/api/0.1/medicine/1/",
+      "id": 1,
+      "code": "ABCDEF",
+      "barcode": null,
+      "name": "Test item",
+      "price": 42.0,
+      "wholesale_price": 12.0,
+      "vat_group": "https://us.provetcloud.com/1234/api/0.1/vatgroup/1/",
+      "type_code": 2,
+      "polymorphic_ctype": "https://us.provetcloud.com/1234/api/0.1/contenttype/1/",
+      "archived": false,
+      "item_list": "https://us.provetcloud.com/1234/api/0.1/itemlist/1/",
+      "created": "2020-08-13T12:29:54-04:00",
+      "modified": "2020-08-13T12:29:54-04:00",
+      "invoice_group": null,
+      "active_substance": null,
+      "alert_level": null,
+      "provider_medicine": null
+    },
+    {
+      "url": "https://us.provetcloud.com/1234/api/0.1/medicine/2/",
+      "id": 2,
+      "code": "AZERTY",
+      "barcode": null,
+      "name": "Test Item 2",
+      "price": 52.0,
+      "wholesale_price": 26.0,
+      "vat_group": "https://us.provetcloud.com/1234/api/0.1/vatgroup/1/",
+      "type_code": 2,
+      "polymorphic_ctype": "https://us.provetcloud.com/1234/api/0.1/contenttype/1/",
+      "archived": false,
+      "item_list": "https://us.provetcloud.com/1234/api/0.1/itemlist/1/",
+      "created": "2020-08-02T17:00:16-04:00",
+      "modified": "2020-08-02T17:00:16-04:00",
+      "invoice_group": null,
+      "active_substance": null,
+      "alert_level": null,
+      "provider_medicine": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "item": [
+        "This field is required."
+    ],
+    "name": [
+        "This field is required."
+    ],
+    "template": [
+        "This field is required."
+    ],
+    "type_code": [
+        "This field is required."
+    ]
+}

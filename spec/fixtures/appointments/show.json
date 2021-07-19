@@ -1,0 +1,33 @@
+{
+    "id": 1,
+    "url": "https://us.provetcloud.com/1234/api/0.1/appointment/1/",
+    "start": "2015-11-09T07:00:00Z",
+    "end": "2015-11-09T07:15:00Z",
+    "title": "Vaccination",
+    "complaint": "Vaccination",
+    "instructions": "Please deworm week before vaccination. Worms may affect to vaccine effect. The animal must be healthy when vaccinated.",
+    "user": "https://us.provetcloud.com/1234/api/0.1/user/1/",
+    "additional_users": [],
+    "client": "https://us.provetcloud.com/1234/api/0.1/client/1/",
+    "patients": [
+        "https://us.provetcloud.com/1234/api/0.1/patient/1/"
+    ],
+    "consultation": null,
+    "related_appointments": null,
+    "duration": 15,
+    "notes": "Client mentioned dog is scratching ears.",
+    "active": 0,
+    "department": "https://us.provetcloud.com/1234/api/0.1/department/1/",
+    "reason": "https://us.provetcloud.com/1234/api/0.1/reason/1/",
+    "ward": null,
+    "type": 1,
+    "start_date": "2015-11-09",
+    "end_date": "2015-11-09",
+    "created": "2018-03-27T00:16:25Z",
+    "modified": "2018-07-13T15:03:43Z",
+    "created_user": null,
+    "modified_user": "https://us.provetcloud.com/1234/api/0.1/user/1/",
+    "telemedicine_url": null,
+    "telemedicine_url_master": null,
+    "telemedicine_room": null
+}

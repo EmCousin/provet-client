@@ -1,0 +1,11 @@
+{
+  "url": "https://us.provetcloud.com/1234/api/0.1/shifttype/1/",
+  "name": "Workday",
+  "code": 1,
+  "department": "https://us.provetcloud.com/1234/api/0.1/department/1/",
+  "in_appointments": true,
+  "in_online_booking": true,
+  "in_all_day": false,
+  "is_custom": false,
+  "is_active": true
+}

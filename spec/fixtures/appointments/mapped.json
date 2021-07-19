@@ -1,0 +1,14 @@
+{
+  "start_date": "2015-11-09T07:00:00Z",
+  "end_date": "2015-11-09T07:15:00Z",
+  "title": "Vaccination",
+  "patient_id": 1,
+  "app_type": 0,
+  "id_ext": 1,
+  "root_reason_id": 1,
+  "care_provider_id": 1,
+  "care_provider_notes": "Client mentioned dog is scratching ears.",
+  "instructions": "Please deworm week before vaccination. Worms may affect to vaccine effect. The animal must be healthy when vaccinated.",
+  "state": "pending",
+  "department_id": 1
+}

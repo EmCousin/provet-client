@@ -7,5 +7,9 @@ module Provet
     def endpoint_name
       'itemtemplateitem'
     end
+
+    def soft_deletable?
+      true
+    end
   end
 end
