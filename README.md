@@ -115,7 +115,7 @@ Example :
 payload = {
   firstname: "Luke",
   lastname: "Skywalker",
-  email: "luke@smalldoorvet.com",
+  email: "luke@example.com",
   patients: [],
 }
 
@@ -131,7 +131,7 @@ Updates a Provet resource and returns that resource.
 payload = {
   firstname: "Luke",
   lastname: "Skywalker",
-  email: "luke@smalldoorvet.com",
+  email: "luke@example.com",
   patients: [],
 }
 
