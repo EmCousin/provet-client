@@ -26,4 +26,4 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
     - name: Run tests
-      run: brakeman --exit-on-warn --output brakeman.html
+      run: bundle exec brakeman --exit-on-warn --output brakeman.html
