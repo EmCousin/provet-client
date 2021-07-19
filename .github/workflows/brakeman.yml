@@ -31,7 +31,5 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - name: Install dependencies
-      run: gem install bundler --no-ri --no-rdoc
     - name: Run tests
-      run: bundle exec brakeman --exit-on-warn --output brakeman.html
+      run: brakeman --exit-on-warn --output brakeman.html
